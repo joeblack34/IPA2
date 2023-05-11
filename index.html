@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="robots" content="index,follow" />
+  <title>«Компания ИПА» - бухгалтерский сервис</title>
+  <meta name="description"
+    content="Доверьте ведение документооборота и общение с контролирующими органами профессионалам. Все консультации бесплатно." />
+  <meta name="keywords" content="сервис, юрист, услуги, налоги, консультация, бухгалтерия" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
+
+    /* body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 15px;
+      font-family: "PT Sans", sans-serif;
+    } */
+    body {
+      background-color: #e3e0cf;
+      /* font-family: "PT Sans", sans-serif; */
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    ul {
+      max-width: 630px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "nav article ads"
+        "footer footer footer";
+      grid-template-rows: 15% 600px 25%;
+      grid-template-columns: 20% 1fr 20%;
+      grid-gap: 10px;
+      height: 100vh;
+      margin: 0 auto;
+      padding: 0;
+      font-size: 18px;
+    }
+
+    header,
+    footer,
+    nav {
+      padding: 20px;
+    }
+
+    #pageHeader {
+      grid-area: header;
+      text-transform: uppercase;
+      text-align: center;
+      align-self: center;
+      border: 1px solid #000;
+    }
+
+    #pageHeader p {
+      margin: auto;
+    }
+
+    #pageFooter {
+      grid-area: footer;
+      text-transform: uppercase;
+      text-align: center;
+      align-self: center;
+      border: 1px solid #000;
+    }
+
+    #pageFooter p {
+      margin: auto;
+    }
+
+    #mainArticle {
+      grid-area: article;
+      width: 660px;
+      align-self: center;
+      justify-self: center;
+    }
+
+    #mainNav {
+      grid-area: nav;
+      align-self: center;
+      justify-self: center;
+      border: 1px solid #000;
+    }
+
+    #siteAds {
+      grid-area: ads;
+      align-self: center;
+      justify-self: center;
+      padding: 10px;
+      border: 1px solid #000;
+    }
+
+    .logo img {
+      max-width: 100%;
+    }
+
+    .accordion {
+      width: 100%;
+      /* max-width: 500px; */
+      overflow: hidden;
+      margin-top: 20px;
+      /* background-color: #2c3e50; */
+      border: 1px solid #000;
+    }
+
+    .accordion__intro {
+      position: relative;
+      padding: 20px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .accordion__intro i {
+      float: right;
+    }
+
+    .accordion__content {
+      padding: 0 20px;
+      max-height: 0;
+      overflow: hidden;
+      will-change: max-height;
+      transition: all 0.25s ease-out;
+      /* color: #f1f1f1; */
+      opacity: 0;
+    }
+
+    .accordion h4,
+    .accordion p {
+      margin: 0;
+      line-height: 1;
+    }
+
+    /* .accordion h4 {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 500;
+    } */
+
+    .accordion p {
+      /* color: #f1f1f1; */
+      font-size: 18px;
+      margin: 0;
+      padding-bottom: 10px;
+    }
+
+    .accordion__active .accordion__content {
+      padding: 0 20px 20px;
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header id="pageHeader">
+      <p>дипломированные сотрудники, разумные сроки, адекватные цены</p>
+    </header>
+    <article id="mainArticle">
+      <div class="accordion">
+        <div class="accordion__intro">
+          <h4>Ведение Бухгалтерии<i class="fa fa-chevron-down fa-small" aria-hidden="true"></i></h4>
+        </div>
+        <div class="accordion__content">
+          <ul>
+            <li>Выписка первичной документации;</li>
+            <li>Обработка первичной документации;</li>
+            <li>Составление отчетности;</li>
+            <li>Сдача отчетности (без участия заказчика);</li>
+            <li>Оптимизация налогов;</li>
+            <li>Сверка взаиморасчетов с клиентами;</li>
+            <li>Начисление заработной платы;</li>
+            <li>Начисление налогов на з/п;</li>
+            <li>Восстановление отчетности;</li>
+            <li>
+              Проверка сданной отчетности за предыдущие отчетные периоды;
+            </li>
+            <li>
+              Открытие расчетного счета в банке (помощь в выборе подходящего
+              по всем критериям);
+            </li>
+            <li>Регистрация ООО/ИП в офисе;</li>
+            <li>Решение индивидуальных проблем.</li>
+            <li>опыт в ведении бухгалтерии более 20 лет.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion__intro">
+          <h4>Юридические Услуги<i class="fa fa-chevron-down" aria-hidden="true"></i></h4>
+        </div>
+        <div class="accordion__content">
+          <ul>
+            <li>Защита по всем уголовным делам;</li>
+            <li>Представление интересов потерпевших;</li>
+            <li>представление интересов по административным делам;</li>
+            <li>Взыскание долгов;</li>
+            <li>Разрешение различных видов трудовых споров;</li>
+            <li>Все юридические вопросы решаются опытными адвокатами;</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion__intro">
+          <h4>Разработка Проектной Документации<i class="fa fa-chevron-down" aria-hidden="true"></i></h4>
+        </div>
+        <div class="accordion__content">
+          <ul>
+            <li>Проекты производства работ (ППР);</li>
+            <li>Проекты организации работ (ПОР);</li>
+            <li>Проекты организации строительства (ПОС);</li>
+            <li>Проекты организации демонтажных работ (ПОД);</li>
+            <li>План производства работ на высоте (ППРВ);</li>
+            <li>Технологические карты.</li>
+          </ul>
+
+          <p>Опыт в строительстве более 10 лет</p>
+          <p>Опыт сотрудничества по объектам:</p>
+          <ul>
+            <li>Лукойл</li>
+            <li>Газпром</li>
+            <li>Завод ВТЗ</li>
+            <li>Министерство обороны</li>
+            <li>Бюджетные учреждения</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+    <nav id="mainNav">
+      <div class="logo"><img src="logo.png" alt="Компания ИПА" /></div>
+    </nav>
+    <div id="siteAds">
+      <h2>Контакты</h2>
+      <p>
+        <a href="tel:+7 (961) 062-97-79"><i class="fa fa-mobile" aria-hidden="true"></i> +7 (961) 062-97-79</a>
+      </p>
+      <p>
+        <a href="mailto:ipacompany@mail.ru"><i class="fa fa-envelope-o" aria-hidden="true"></i> ipacompany@mail.ru</a>
+      </p>
+      <p>
+        <a href="tel:+7 (903) 315-68-12"><i class="fa fa-mobile" aria-hidden="true"></i> +7 (903) 315-68-12</a>
+      </p>
+      <p>
+        <a href="mailto:ipakb@bk.ru"><i class="fa fa-envelope-o" aria-hidden="true"></i> ipakb@bk.ru</a>
+      </p>
+      <p>
+        <a href="https://yandex.ru/maps?whatshere%5Bpoint%5D=44.81854852592866%2C48.755665572865645&whatshere%5Bzoom%5D=15.910652&ll=44.81854319572449%2C48.75566791340147&z=15.910652"
+          target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> 404118, Россия,
+          Волгоградская обл., г.Волжский, улица 87-й Гвардейской, 63Д, офис
+          14</a>
+      </p>
+    </div>
+    <footer id="pageFooter">
+      <p>Целью Компании является выстраивание долгосрочных партнерских
+        взаимоотношений</p>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      const accordions = document.querySelectorAll(".accordion");
+
+      const openAccordion = (accordion) => {
+        const content = accordion.querySelector(".accordion__content");
+        accordion.classList.add("accordion__active");
+        content.style.maxHeight = content.scrollHeight + "px";
+      };
+
+      const closeAccordion = (accordion) => {
+        const content = accordion.querySelector(".accordion__content");
+        accordion.classList.remove("accordion__active");
+        content.style.maxHeight = null;
+      };
+
+      accordions.forEach((accordion) => {
+        const intro = accordion.querySelector(".accordion__intro");
+        const content = accordion.querySelector(".accordion__content");
+
+        intro.onclick = () => {
+          if (content.style.maxHeight) {
+            closeAccordion(accordion);
+          } else {
+            accordions.forEach((accordion) => closeAccordion(accordion));
+            openAccordion(accordion);
+          }
+        };
+      });
+
+    </script>
+  </div>
+</body>
